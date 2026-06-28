@@ -1,0 +1,23 @@
+# SAIA 2163 — NLP Final Project
+# SMS Spam Detector — Python Dependencies
+# Install with: pip install -r requirements.txt
+
+# Core data science
+pandas==2.2.2
+numpy==1.26.4
+
+# NLP
+nltk==3.8.1
+wordcloud==1.9.3
+
+# Machine learning
+scikit-learn==1.4.2
+joblib==1.4.2
+
+# Web application
+streamlit==1.35.0
+
+# Visualization
+matplotlib==3.9.0
+seaborn==0.13.2
+plotly==5.22.0
