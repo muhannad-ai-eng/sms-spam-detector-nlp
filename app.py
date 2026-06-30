@@ -138,7 +138,7 @@ st.markdown("""
 # ============================================================
 
 @st.cache_resource
-def load_models():
+def load_models(_v=2):
     """
     Load all trained models and vectorizers from disk.
     Uses st.cache_resource so they are only loaded once per session.
@@ -1008,7 +1008,7 @@ def main():
     based on the sidebar navigation selection.
     """
     # Load shared resources once
-    models = load_models()
+    models = load_models(_v=2)
     df     = load_data()
 
     # Render sidebar and get the selected page
