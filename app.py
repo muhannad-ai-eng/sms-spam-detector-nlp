@@ -30,7 +30,10 @@ from nltk.tokenize import word_tokenize
 
 # ── Download NLTK data (silent, only runs once) ──────────────────────────
 for pkg in ['stopwords', 'wordnet', 'punkt', 'punkt_tab', 'omw-1.4']:
-    nltk.download(pkg, quiet=True)
+    try:
+        nltk.download(pkg, quiet=True)
+    except Exception:
+        pass
 
 
 # ============================================================
