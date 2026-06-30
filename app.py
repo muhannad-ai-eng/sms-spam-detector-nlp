@@ -143,7 +143,7 @@ def load_models():
     Returns:
         dict: keys are model/vectorizer names, values are loaded objects.
     """
-    base = os.path.join(os.path.dirname(__file__), 'models')
+    base = os.path.dirname(__file__)
     return {
         'nb_bow':           joblib.load(os.path.join(base, 'nb_bow.pkl')),
         'nb_tfidf':         joblib.load(os.path.join(base, 'nb_tfidf.pkl')),
